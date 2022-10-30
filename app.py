@@ -18,9 +18,7 @@ def start(message):
 @bot.message_handler(content_types=['text'])
 def callback_query(message):
     key = types.InlineKeyboardMarkup()
-    if firstlang == 'en':
-        but_1 = types.InlineKeyboardButton(text=r"\U+1F1EC U+1F1E7", callback_data="NumberOne")
-
+    but_1 = types.InlineKeyboardButton(text="first language", callback_data="NumberOne")
     but_2 = types.InlineKeyboardButton(text="Swap languages", callback_data="NumberTwo")
     but_3 = types.InlineKeyboardButton(text="Second", callback_data="NumberTree")
 
